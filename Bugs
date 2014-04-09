@@ -432,7 +432,7 @@
             "translation": "Tick",
             "side": "arachnids",
             "help": "You have an annoying bite you can use to your advantage by using /bite on a bug once a night. This will prevent them from doing anything that night. Because you are so small, you will be inspected and exposed as a caterpillar! Your vote is 1.1. If you want, you can use /change until the Butterfly is alive, which will give you a -0.9 voteshield and you will be inspected/exposed as a butterfly, but you will lose your ability to distract! Use /tt to talk with your team.",
-            "info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or , Can be inspected ad Butterfly and have a voteshield equal to -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the arachnids.",
+            "info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or, can be inspected as Butterfly and have a voteshield of -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the arachnids.",
             "actions": {
 				"inspect": { "revealAs": [ "villager" ] },
 				"onlist": "villager",
@@ -465,7 +465,7 @@
             "side": "arachnids",
             "help": "You have an annoying bite you can use to your advantage by using /bite on a bug once a night. This will prevent them from doing anything that night. Because you are so small, you will be inspected and exposed as a caterpillar! Your vote is 1.1. If you want, you can use /change until the Butterfly is alive, which will give you a -0.9 voteshield and you will be inspected/exposed as a butterfly, but you will lose your ability to distract! Use /tt to talk with your team.",
             "help2": "You cannot change into your butterfly form anymore",
-			"info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or , Can be inspected ad Butterfly and have a voteshield equal to -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the arachnids.",
+			"info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or, can be inspected as Butterfly and have a voteshield of -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the arachnids.",
             "actions": {
 				"inspect": { "revealAs": [ "villager" ] },
 				"onlist": "villager",
@@ -492,7 +492,7 @@
 			"help2": "Use /cater to return to your old role. If there is no Butterfly alive then you will return into your old role anyway",
             "info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or , Can be inspected ad Butterfly and have a voteshield equal to -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the arachnids.",
             "actions": {
-				"onDeadRoles": { "convertTo": { "tickA": ["butterfly"] }, "convertmsg": "The ticl has changed into a different form!"},
+				"onDeadRoles": { "convertTo": { "tickA": ["butterfly"] }, "convertmsg": "The tick has changed into a different form!"},
 				"inspect": { "revealAs": [ "butterfly" ] },
 				"onlist": "butterfly",
 				"teamTalk": true,
@@ -1182,3 +1182,4 @@
         "March 26, 2014": "Theme completed."
 }
 }
+
