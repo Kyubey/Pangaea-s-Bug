@@ -920,8 +920,8 @@
         {	"role": "cuckooA",
             "translation": "Cuckoo",
             "side": "birds",
-            "help": "You are a smaller and frailer bird than the nighthawk and owl, but still very deadly. You can /swoop once a night to kill a bug (shared with team) which will bypass all distracts and protects. Your vote counts as +2 and you have a voteshield of -2. You also revenge any actions by any bug, but you can still be inspected. Use /tt to talk with your team.",
-            "info": "Can kill one person during the night. Avoids all kills, distracts, and poison from bugs. Vote counts as +2. Has a voteshield of -2. Sided with the birds.",
+            "help": "You are a smaller and frailer bird than the nighthawk and owl, but still very deadly. You can /swoop once a night to kill a bug (shared with team) which will bypass all distracts and protects. Your vote counts as +2. You also revenge any actions by any bug, but you can still be inspected. Use /tt to talk with your team.",
+            "info": "Can kill one person during the night. Avoids and revenge kill all kills, distracts, expose and poison from bugs. Vote counts as +2. Sided with the birds.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -945,8 +945,8 @@
             "translation": "Cuckoo",
 			"hide": true,
             "side": "birds",
-            "help": "You are a smaller and frailer bird than the nighthawk and owl, but still very deadly. You can /swoop once a night to kill a bug (shared with team) which will bypass all distracts and protects. Your vote counts as +2 and you have a voteshield of -2. Use /tt to talk with your team.",
-            "info": "Can swoop one person during the night. Avoids all kills, distracts, and poison from bugs. Vote counts as +2. Has a voteshield of -2. Sided with the birds.",
+            "help": "You are a smaller and frailer bird than the nighthawk and owl, but still very deadly. You can /swoop once a night to kill a bug (shared with team) which will bypass all distracts and protects. Your vote counts as +2. You also revenge any actions by any bug, but you can still be inspected. Use /tt to talk with your team.",
+            "info": "Can kill one person during the night. Avoids and revenge kill all kills, distracts, expose and poison from bugs. Vote counts as +2. Sided with the birds.",
             "actions": {
 				"initialCondition": { "curse": { "cursedRole": "cuckooA", "curseCount": 1, "silentCurse": true }},
 				"teamTalk": true,
