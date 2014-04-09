@@ -1,6 +1,6 @@
 {
     "name": "Bugs",
-    "author": ["Pangaea", "Shaz"],
+    "author": ["Pangaea"],
     "minplayers": 6,
     "summary": "Welcome to the world of bugs! Join us as we explore the wonders and threats that can be found in the bug world! Help the bugs fight against shared threats, such as the monstorous birds, but be careful as well, because the bugs have been divided up into teams to fight against each other! Who will be able to dominate the bug world as their own? | PM Pangaea with any suggestions. | Thread: http://pokemon-online.eu/threads/bugs.26630/",
     "threadlink": "http://pokemon-online.eu/threads/bugs.26630/",
@@ -50,9 +50,10 @@
             "translation": "Monarch Butterfly",
             "side": "village",
             "help": "A beautiful species of butterfly is what you are! Like a normal butterfly, you have a vote of +2. However, what makes you special is that you can /distract a bug once a night, but be careful, because if you try distracting a bird, you will be eaten instead!",
-            "info": "Vote counts as +2. Can distract during the night. Sided with the friendly bugs.",
+            "info": "Vote counts as +2. Can distract during the night. Inspects as a normal Butterfly. Sided with the friendly bugs.",
             "actions": {
 			"vote": 2,
+			"inspect": { "revealAs": [ "butterfly" ] },
                 "night": {
                     "distract": {
 						"command": ["distract", "dummy3"],
@@ -492,7 +493,7 @@
 			"help2": "Use /cater to return to your old role. If there is no Butterfly alive then you will return into your old role anyway",
             "info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or , Can be inspected ad Butterfly and have a voteshield equal to -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the arachnids.",
             "actions": {
-				"onDeadRoles": { "convertTo": { "tickA": ["butterfly"] }, "convertmsg": "The tick has changed into a different form!"},
+				"onDeadRoles": { "convertTo": { "tickA": ["butterfly", "mbutterfly"] }, "convertmsg": "The tick has changed into a different form!"},
 				"inspect": { "revealAs": [ "butterfly" ] },
 				"onlist": "butterfly",
 				"teamTalk": true,
