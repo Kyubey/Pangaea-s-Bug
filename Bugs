@@ -49,7 +49,7 @@
         {	"role": "mbutterfly",
             "translation": "Monarch Butterfly",
             "side": "village",
-            "help": "A beautiful species of butterfly is what you are! Like a normal butterfly, you have a vote of +2. However, what makes you special is that you can /distract a bug once a night, but be careful, because if you try distracting a bird, you will be eaten instead!",
+            "help": "A beautiful species of butterfly is what you are! Like a normal butterfly, you have a vote of +2. However, what makes you special is that you can /distract a bug once a night, but be careful, because if you try distracting the Owl, you will be eaten instead!",
             "info": "Vote counts as +2. Can distract during the night. Inspects as a normal Butterfly. Sided with the friendly bugs.",
             "actions": {
 			"vote": 2,
@@ -87,7 +87,7 @@
         {	"role": "cricket",
             "translation": "Cricket",
             "side": "village",
-            "help": "While most sounds that bugs make annoy people, your sound is actually quite peaceful! You can /chirp once during the day to expose someone, but beware, because if you try to expose a bird, you will be eaten instead!",
+            "help": "While most sounds that bugs make annoy people, your sound is actually quite peaceful! You can /chirp once during the day to expose someone.",
             "info": "Can /expose one person during the day. Sided with the friendly bugs.",
             "actions": {
                 "standby": {
@@ -302,7 +302,7 @@
         {	"role": "spider",
             "translation": "Spider",
             "side": "arachnids",
-            "help": "Eek! A spider! Sorry, but you just tend to scare most people! You can /kill a bug (shared with team) once a night to help your team win. But be careful, because if you try to kill a bird, you will be eaten instead! Other than that, vote off the good guys during the day in hopes of winning. Use /tt to talk with your partners",
+            "help": "Eek! A spider! Sorry, but you just tend to scare most people! You can /kill a bug (shared with team) once a night to help your team win. But be careful, because if you try to kill the Owl, you will be eaten instead! Other than that, vote off the good guys during the day in hopes of winning. Use /tt to talk with your partners",
             "info": "Can kill one person during the night. Sided with the arachnids.",
             "actions": {
 				"teamTalk": true,
@@ -323,7 +323,7 @@
         {	"role": "widow",
             "translation": "Black Widow",
             "side": "arachnids",
-            "help": "You are one of the most poisonous spiders in the world. Because you are so feared by many bugs, you avoid all night kills and poison. Type /kill during the day to kill a bug, and /poison during the night to kill a bug in two days. Beware, because if you try to kill or poison a bird, you will be eaten instead! Use /tt to talk with your team.",
+            "help": "You are one of the most poisonous spiders in the world. Because you are so feared by many bugs, you avoid all night kills and poison. Type /kill during the day to kill a bug, and /poison during the night to kill a bug in two days. Beware, because if you try to kill or poison the Owl, you will be eaten instead! Use /tt to talk with your team.",
             "info": "Can kill one person during the standby. Can poison one person during the night. Avoids all night kills and poison. Sided with the arachnids.",
             "actions": {
 				"teamTalk": true,
@@ -353,7 +353,7 @@
         {	"role": "tarantulaA",
             "translation": "Tarantula",
             "side": "arachnids",
-            "help": "You are a species of spider that can grow up to 9 to 10 inches long! You can /kill a bug during the night (shared with team,) but since you are so slow you will always move last. But beware, because if you try killing a bird, you will be eaten instead! Also, you get to kill one more bug if you are lynched. Use /tt to talk with your team.",
+            "help": "You are a species of spider that can grow up to 9 to 10 inches long! You can /kill a bug during the night (shared with team,) but since you are so slow you will always move last. But beware, because if you try killing the Owl, you will be eaten instead! Also, you get to kill one more bug if you are lynched. Use /tt to talk with your team.",
             "info": "Can kill one person during the night. Can kill one more person if lynched. Sided with the arachnids.",
             "actions": {
 				"teamTalk": true,
@@ -410,7 +410,7 @@
         {	"role": "scorpion",
             "translation": "Scorpion",
             "side": "arachnids",
-            "help": "Your poison is capable of making humans and bugs sick, and can even kill them! Just like a spider, you can /kill one bug during the night (shared with team.) But be careful, because if you try to kill a bird, you will be eaten instead! However, you are immune to all poison. Use /tt to talk with your partners",
+            "help": "Your poison is capable of making humans and bugs sick, and can even kill them! Just like a spider, you can /kill one bug during the night (shared with team.) But be careful, because if you try to kill the Owl, you will be eaten instead! However, you are immune to all poison. Use /tt to talk with your partners",
             "info": "Can kill one person during the night. Immune to all poison. Sided with the arachnids.",
             "actions": {
 				"teamTalk": true,
@@ -541,7 +541,7 @@
         {	"role": "dragonfly",
             "translation": "Dragonfly",
             "side": "winged",
-            "help": "A strange insect you are, you tend to be found around swamps and damp areas. You can /kill a bug twice during the day, but be careful as there is a 100% chance your second kill will reveal you! If you try killing a bird, you will be eaten instead! Use /tt to talk with your team.",
+            "help": "A strange insect you are, you tend to be found around swamps and damp areas. You can /kill a bug twice during the day, but be careful as there is a 100% chance your second kill will reveal you! If you try killing the Owl, you will be eaten instead! Use /tt to talk with your team.",
             "info": "Can kill two bugs during the standby. 100% chance second kill will reveal. Sided with the winged insects.",
             "actions": {
 				"teamTalk": true,
