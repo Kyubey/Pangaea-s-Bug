@@ -855,7 +855,7 @@
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" },
-				"dummy": {"mode": "killattacker" }, "daykill": "evade",
+				"daykill": "evade",
                 "standby": {
                     "swoop": {
                         "msg": "Type /swoop to eat some bugs!",
@@ -966,7 +966,7 @@
                 "startup": "team-reveal-with-roles",
 				"vote": 2,
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" }, "distract": { "mode": "ignore", "silent":true },
-				"dummy3": {"mode": "killattacker" }, "dummy": {"mode": "killattacker" }, "daykill": "evade",
+				"daykill": "evade",
                 "night": {
                     "swoop": {
 						"command": ["kill"],
