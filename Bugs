@@ -320,6 +320,38 @@
                 }
             }
         },
+        {	"role": "waterspider",
+            "translation": "Water Spider",
+            "side": "arachnids",
+            "help": "Eek! A spider! Sorry, but you just tend to scare most people! You can discover someone's identity with /scare but they will know that someone has inspected them. You can /kill a bug (shared with team) once a night to help your team win. But be careful, because if you try to kill the Owl, you will be eaten instead! Other than that, vote off the good guys during the day in hopes of winning. Use /tt to talk with your partners",
+            "info": "Can kill one person during the night(shared with team). Can inspect one person during the night (that person will know to have been inspected). Vote counts as -2. Sided with the arachnids.",
+            "actions": {
+				"teamTalk": true,
+                "startup": "team-reveal-with-roles",
+				"vote": -2,
+                "night": {
+                    "scare": {
+						"command": ["inspect", "dummy", "dummy2", "convert"],
+						"newRole": { "hawkA": ["hawkB"], "owlA": ["owlB"], "cuckooA": ["cuckooB"]},
+						"silent": true, "silentConvert": true, "convertfailmsg": "",
+						"dummy2targetmsg": "±Scarab: Eek! A water spider discovered where you live! Gotta get away!",
+                        "target": "AnyButTeam",
+						"broadcast": "team",
+                        "common": "Team",
+                        "priority": 25
+                    },
+                    "kill": {
+						"command": ["kill", "dummy", "convert"],
+						"newRole": { "hawkA": ["hawkB"], "owlA": ["owlB"], "cuckooA": ["cuckooB"]},
+						"silent": true, "silentConvert": true, "convertfailmsg": "",
+                        "target": "AnyButTeam",
+						"broadcast": "team",
+                        "common": "Team",
+                        "priority": 7
+                    }
+                }
+            }
+        },
         {	"role": "widow",
             "translation": "Black Widow",
             "side": "arachnids",
@@ -1075,7 +1107,7 @@
 		"roly",
 		"oladybug",
 		"tarantulaA",
-		"spider",
+		"waterspider",
 		"slug",
         {"ladybug":0.5, "butterfly":0.5},
 		"tick"
@@ -1090,7 +1122,7 @@
 		"roly",
 		"oladybug",
 		"tarantulaA",
-		"spider",
+		"waterspider",
 		"slug",
         {"ladybug":0.5, "butterfly":0.5},
         {"tick":0.5, "scorpion":0.5},
@@ -1110,7 +1142,7 @@
 		"roly",
 		"oladybug",
 		"tarantulaA",
-		"spider",
+		"waterspider",
 		"slug",
         {"ladybug":0.5, "butterfly":0.5},
         {"tick":0.5, "scorpion":0.5},
@@ -1136,7 +1168,7 @@
 		"roly",
 		"oladybug",
 		"tarantulaA",
-		"spider",
+		"waterspider",
 		"slug",
         "ladybug",
         "widow",
@@ -1169,7 +1201,7 @@
 		"broly",
 		"oladybug",
 		"tarantulaA",
-		"spider",
+		"waterspider",
 		"slug",
         "ladybug",
         "widow",
@@ -1206,7 +1238,7 @@
 		"broly",
 		"oladybug",
 		"tarantulaA",
-		"spider",
+		"waterspider",
 		"slug",
         "ladybug",
         "widow",
