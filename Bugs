@@ -368,7 +368,7 @@
 						"silent": true, "silentConvert": true, "convertfailmsg": "",
                         "target": "AnyButTeam",
 						"broadcast": "team",
-                        "common": "Self",
+                        "common": "Team",
                         "priority": 6
                     }
                 },
@@ -385,8 +385,8 @@
         {	"role": "tarantulaA",
             "translation": "Tarantula",
             "side": "arachnids",
-            "help": "You are a species of spider that can grow up to 9 to 10 inches long! You can /kill a bug during the night (shared with team,) but since you are so slow you will always move last. But beware, because if you try killing the Owl, you will be eaten instead! Also, you get to kill one more bug if you are lynched. Use /tt to talk with your team.",
-            "info": "Can kill one person during the night. Can kill one more person if lynched. Sided with the arachnids.",
+            "help": "You are a species of spider that can grow up to 9 to 10 inches long! You can /kill a bug during the night (shared with team,) but since you are so slow you will always move last. But beware, because if you try killing the Owl, you will be eaten instead! Also, you will survive the first time that you get lynched and your kill will become able to surpass protections and immunities. Use /tt to talk with your team.",
+            "info": "Can kill one person during the night. If lynched he will survive the first time and his kill will become able to surpass protection and bypass night-kill evasion and immunity abilities. Sided with the arachnids.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -411,30 +411,20 @@
             "translation": "Lynched Tarantula",
             "side": "arachnids",
 			"hide": true,
-            "help": "We'll give you one more chance to help your team of arachnids! Use /chomp to kill someone one last time. This kill will bypass all protects and distracts. This kill is also capable of killing birds. However, you will die the next day.",
-            "info": "Can kill one person during the night. Can kill one more person if lynched. Sided with the arachnids.",
+            "help": "We'll give you one more chance to help your team of arachnids! Use /kill to eliminate someone one last time. This kill will bypass all protects and immunities. This kill is also capable of killing birds.",
+            "info": "Can kill one person during the night. If lynched he will survive the first time and his kill will become able to surpass protection and bypass night-kill evasion and immunity abilities. Sided with the arachnids.",
             "actions": {
-                "initialCondition": { "poison": { "count": 1, "poisonDeadMessage": "You lost all your HP and died!"}},
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
                 "night": {
                     "kill": {
-						"hide": true,
-						"command": ["kill", "dummy", "convert"],
-						"newRole": { "hawkA": ["hawkB"], "owlA": ["owlB"], "cuckooA": ["cuckooB"]},
-						"silent": true, "silentConvert": true, "convertfailmsg": "",
-                        "target": "AnyButTeam",
-						"broadcast": "team",
-                        "common": "Team",
-                        "priority": 19
-                    },
-                    "chomp": {
 						"command": ["kill", "dummy3"],
 						"bypass": ["evadeChance", "ignore", "evadeCharges"],
                         "target": "AnyButTeam",
+						"pierce": true,
 						"broadcast": "team",
                         "common": "Self",
-                        "priority": 0
+                        "priority": 1.2
                     }
                 }
             }
@@ -442,17 +432,27 @@
         {	"role": "scorpion",
             "translation": "Scorpion",
             "side": "arachnids",
-            "help": "Your poison is capable of making humans and bugs sick, and can even kill them! Just like a spider, you can /kill one bug during the night (shared with team.) But be careful, because if you try to kill the Owl, you will be eaten instead! However, you are immune to all poison. Use /tt to talk with your partners",
-            "info": "Can kill one person during the night. Immune to all poison. Sided with the arachnids.",
+            "help": "Your poison is capable of making humans and bugs sick, and can even kill them! Every night you can /poison one bug during the night (shared with team, will kill the target the next night) and poison another one with /toxic (not shared with team, will kill the target after kills after 2 days/3 nights). But be careful, because if you try to poison the Owl, you will be eaten instead! However, you are immune to all poison. Use /tt to talk with your partners",
+            "info": "Can poison one person during the night (shared with Black Widow, kills after 1 day/2 nights). Can even poison another person with a not shared ability but it takes more time to kill the target (kills after 2 days/3 nights) Immune to all poison. Sided with the arachnids.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
 				"poison": { "mode": "ignore" },
                 "night": {
-                    "kill": {
-						"command": ["kill", "dummy", "convert"],
+                    "poison": {
+						"command": ["poison", "dummy", "convert"],
 						"newRole": { "hawkA": ["hawkB"], "owlA": ["owlB"], "cuckooA": ["cuckooB"]},
 						"silent": true, "silentConvert": true, "convertfailmsg": "",
+                        "target": "AnyButTeam",
+						"broadcast": "team",
+                        "common": "Team",
+                        "priority": 7
+                    },
+                    "toxic": {
+						"command": ["poison", "dummy", "convert"],
+						"newRole": { "hawkA": ["hawkB"], "owlA": ["owlB"], "cuckooA": ["cuckooB"]},
+						"silent": true, "silentConvert": true, "convertfailmsg": "",
+						"count": 3,
                         "target": "AnyButTeam",
 						"broadcast": "team",
                         "common": "Team",
@@ -1088,7 +1088,7 @@
 	],
     "roles3": [
         "villager",
-        "cricket",
+        "snailsmall",
         "mbutterfly",
         "qbee",
 		"hawk",
@@ -1099,7 +1099,7 @@
 	],
     "roles4": [
         "villager",
-        "cricket",
+        "snailsmall",
         "mbutterfly",
         "qbee",
 		"hawk",
@@ -1125,7 +1125,7 @@
 		"waterspider",
 		"slug",
         {"ladybug":0.5, "butterfly":0.5},
-        {"tick":0.5, "scorpion":0.5},
+        "scorpion",
 		"worm",
 		"mosquito",
         {"grasshopper":0.5, "stickA":0.5},
@@ -1151,7 +1151,7 @@
         {"grasshopper":0.5, "stickA":0.5},
 		 "ant",
 		 "ant",
-		 "spider",
+		 "scorpion",
 		 "cockroach",
 		 "villager",
 		 "villager",
