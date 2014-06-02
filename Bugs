@@ -269,50 +269,25 @@
                 }
             }
         },
-        {	"role": "slugA",
+        {	"role": "slug",
             "translation": "Slug",
             "side": "village",
             "help": "You are a small, cuddly bug, who spends most of its time eating leaves! Unfortunately, the only thing you can do is vote to remove bad guys during the day!",
-            "info": "Sees itself as a caterpillar. Inspects/exposes as a spider. When Lynched he will be able to /kill another player before to die even if it is a Bird, can still be distracted. Sided with the friendly bugs.",
+            "info": "Sees itself as a caterpillar. Inspects/exposes as a spider. If someone tries to night-kill slug they will be poisoned and if they try to day-kill it they will immediately die. Sided with the friendly bugs.",
             "actions": {
 				"inspect": { "revealAs": [ "spider" ] },
 				"onlist": "spider",
 					"startup": {
                     "revealAs": "villager"
 					},
-                "lynch": {
-                    "convertTo": "slugB",
-                    "convertmsg": "±Scarab: You swatted the Slug away, but it has come back to his revenge before to die!"
+				"daykill": "bomb", "daykillrevengemsg": "±Scarab: ~Target~ attacked the poor little Slug, but meanwhile doing so they slipped on Slug's drool and crashed against a tree!",
+				"kill": {
+                    "mode": "poisonattacker",
+					"count": 2,
+					"poisonDeadMessage": "After attacking the Slug you have found yourself full of their saliva and because of this now you slipped your head against a Tree",
+                    "msg": "±Scarab: You are full of ~User~'s saliva, be careful you could slip your head against something!"
                 }
-            }
-        },
-        {	"role": "slugB",
-            "translation": "Vengeful Slug",
-            "side": "village",
-			"hide": "true",
-            "help": "It looks like that you were the Slug. Oh well before to die tonight I suggest you to bring someone with you to the underworld with /kill, it works even with the Birds like Hawk and Cuckoo.",
-            "info": "Sees itself as a caterpillar. Inspects/exposes as a spider. When Lynched he will be able to /kill another player before to die even if it is a Bird, can still be distracted. Sided with the friendly bugs.",
-            "actions": {
-                "initialCondition": { "poison": { "count": 1, "poisonDeadMessage": "The Slug can die in peace now!"}},
-				"inspect": { "revealAs": [ "spider" ] },
-				"kill": { "mode": "ignore", "silent": true },
-					"night": {
-                    "kill": {
-						"command": ["kill", "dummy", "convert"],
-						"newRole": { "hawkA": ["hawkB"], "owlA": ["owlB"], "cuckooA": ["cuckooB"]},
-						"bypass": ["evadeChance", "ignore", "evadeCharges"],
-						"silent": true, "silentConvert": true, "convertfailmsg": "",
-                        "target": "AnyButTeam",
-						"broadcast": "team",
-                        "common": "Team",
-                        "priority": 1.3
-                    }
-                },
-                "lynch": {
-                    "convertTo": "slugB",
-                    "convertmsg": "±Scarab: You swatted the Slug away, but it has come back to his revenge before to die!"
-                }
-            }
+			}
         },
         {	"role": "cockroach",
             "translation": "Cockroach",
@@ -615,13 +590,13 @@
                         "msg": "Type /kill to eliminate someone and /kill2 to destroy another one, but you your second kill will reveal who you are.",
 						"command": "kill",
                         "target": "AnyButTeam",
-                        "killmsg": "±Scarab: A large dragonfly flies high above the bugs! It sees [Player] and decides to carry them away!"
+                        "killmsg": "±Scarab: A large dragonfly flies high above the bugs! It sees ~Target~ and decides to carry them away!"
                     },
                     "kill2": {
 						"command": "kill",
                         "target": "AnyButTeam",
 						"revealChance": 1,
-                        "killmsg": "±Scarab: The dragonfly has returned for another victim! It swoops down and picks up [Player], carrying them away!",
+                        "killmsg": "±Scarab: The dragonfly has returned for another victim! It swoops down and picks up ~Target~, carrying them away!",
 						"revealmsg": "±Scarab: ~Self~ the ~Role~ flies away with no remorse for what they have done!"
                     }
                 }
@@ -1115,7 +1090,7 @@
         "spider",
 		"hawk",
         "tick",
-		"slugA",
+		"slug",
 		"oladybug"
 	],
     "roles3": [
@@ -1140,7 +1115,7 @@
 		"oladybug",
 		"tarantulaA",
 		"waterspider",
-		"slugA",
+		"slug",
         {"ladybug":0.5, "butterfly":0.5},
 		"tick"
 	],
@@ -1155,7 +1130,7 @@
 		"oladybug",
 		"tarantulaA",
 		"waterspider",
-		"slugA",
+		"slug",
         {"ladybug":0.5, "butterfly":0.5},
         "scorpion",
 		"worm",
@@ -1175,7 +1150,7 @@
 		"oladybug",
 		"tarantulaA",
 		"waterspider",
-		"slugA",
+		"slug",
         {"ladybug":0.5, "butterfly":0.5},
         {"tick":0.5, "scorpion":0.5},
 		"worm",
@@ -1201,7 +1176,7 @@
 		"oladybug",
 		"tarantulaA",
 		"waterspider",
-		"slugA",
+		"slug",
         "ladybug",
         "widow",
 		"worm",
@@ -1234,7 +1209,7 @@
 		"oladybug",
 		"tarantulaA",
 		"waterspider",
-		"slugA",
+		"slug",
         "ladybug",
         "widow",
 		"worm",
@@ -1271,7 +1246,7 @@
 		"oladybug",
 		"tarantulaA",
 		"waterspider",
-		"slugA",
+		"slug",
         "ladybug",
         "widow",
 		"worm",
@@ -1300,7 +1275,7 @@
 		 "tick",
 		 "oladybug",
 		 "villager",
-		 "slugA",
+		 "slug",
 		 "beeA",
 		 "cuckoo"
 	],
@@ -1319,3 +1294,4 @@
         "April 11, 2014": "Nerfed Night Hawk and Cuckoo."
 }
 }
+
