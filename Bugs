@@ -2,7 +2,7 @@
     "name": "Bugs",
     "author": ["Pangaea"],
     "minplayers": 6,
-    "summary": "Welcome to the world of bugs! Join us as we explore the wonders and threats that can be found in the bug world! Help the bugs fight against shared threats, such as the monstorous birds, but be careful as well, because the bugs have been divided up into teams to fight against each other! Who will be able to dominate the bug world as their own? | PM Pangaea with any suggestions. | Thread: http://pokemon-online.eu/threads/bugs.26630/",
+    "summary": "Welcome to the world of bugs! If you are a little girl, then this is not the theme for you! With a daykilling nighthawks, a cockroach that can kill, a snail that can inspect and an annoying fly, all these bugs are surely ready to battle it out in the bug world! But in the end, there can only be one winner. Who will be able to dominate the bug world and take control? | UPDATES: Tips being added soon, I've just been very busy lately. Changed up the summary and fixed some typos in the theme, and a few other balance fixes, too. (I should probably update the /changelog more often.) | Thread: http://pokemon-online.eu/threads/bugs.26630/",
     "threadlink": "http://pokemon-online.eu/threads/bugs.26630/",
     "sides": [
         {
@@ -18,7 +18,7 @@
         {
             "side": "winged",
             "translation": "Winged Insects",
-            "winmsg": "±Scarab: Looks like the winged insects ~Players~ kept themselves safe by staying high in the sky! They can now patrol the ground to rid themselves of any insects that can't fly!"
+            "winmsg": "±Scarab: Looks like the winged insects, ~Players~, kept themselves safe by staying high in the sky! They can now patrol the ground to rid themselves of any insects that can't fly!"
         },
         {
             "side": "arachnids",
@@ -33,7 +33,7 @@
             "translation": "Caterpillar",
             "side": "village",
             "help": "You are a small, cuddly bug, who spends most of its time eating leaves! Unfortunately, the only thing you can do is vote to remove bad guys during the day!",
-            "info": "Standard villager. Sided with the friendly bugs.",
+            "info": "Standard villager. Sided with the Friendly Bugs.",
             "actions": {
             }
         },
@@ -41,7 +41,7 @@
             "translation": "Butterfly",
             "side": "village",
             "help": "We decided that you are more fit on the friendly bugs team. Vote off arachnids, winged insects and birds with your +2 vote!",
-            "info": "Vote counts as +2. Sided with the friendly bugs.",
+            "info": "Vote counts as +2. Sided with the Friendly Bugs.",
             "actions": {
 			"vote": 2
             }
@@ -60,7 +60,7 @@
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 1.1,
-                        "distractmsg": "±Scarab: You tried performing your action, but you were distracted by the monarch butterfly's beautiful wings!",
+                        "distractmsg": "±Scarab: You tried performing your action, but you were distracted by the Monarch Butterfly's beautiful wings!",
                         "teammsg": "±Scarab: Your partner was mesmerized by the Monarch Butterfly's wings last night, so you lost time trying to help your team mate and you were unable to ~Action~."
                     }
                 }
@@ -70,7 +70,7 @@
             "translation": "Grasshopper",
             "side": "village",
             "help": "It must be tiring jumping around everywhere all the time! Luckily for you, the friendly bugs immediately recognize you, so you can /trust one person during the night to tell them your role!",
-            "info": "Can tell one person who they are once per night. Sided with the friendly bugs.",
+            "info": "Can tell one person who they are once per night. Sided with the Friendly Bugs.",
             "actions": {
                 "night": {
                     "trust": {
@@ -88,7 +88,7 @@
             "translation": "Cricket",
             "side": "village",
             "help": "While most sounds that bugs make annoy people, your sound is actually quite peaceful! You can /chirp once during the day to expose someone.",
-            "info": "Can /expose one person during the day. Sided with the friendly bugs.",
+            "info": "Can /expose one person during the day. Sided with the Friendly Bugs.",
             "actions": {
                 "standby": {
                     "chirp": {
@@ -104,7 +104,7 @@
             "translation": "LadyBug",
             "side": "village",
             "help": "We decided that you were more fit as a friendly bug than a winged insect. Use your -2 vote to save your friends during the day!",
-            "info": "Vote counts as -2. Sided with the friendly bugs.",
+            "info": "Vote counts as -2. Sided with the Friendly Bugs.",
             "actions": {
 				"vote":-2
             }
@@ -113,17 +113,17 @@
             "translation": "Ant",
             "side": "village",
             "help": "The ants go marching one by one, HORAH! HORAH! You are strong alone, but are even stronger when with a colony! You know the other ants. Use /tt to talk with the other Ants.",
-            "info": "Knows the other ants. Sided with the friendly bugs.",
+            "info": "Knows the other ants. Sided with the Friendly Bugs.",
             "actions": {
 				"teamTalk": [ "ant"],
                 "startup": { "revealRole": "ant" }
             }
         },
         {	"role": "oladybug",
-            "translation": "Orange LadyBug",
+            "translation": "Orange Ladybug",
             "side": "village",
             "help": "A rare color, there are not many sightings of your pretty color. However, you are poisonous, so you can use your lethal poison to /kill a bug during the day, but you will be revealed! But since your poison doesn't smell so good, you will avoid all day kills and half the time you will avoid even the night kills! Unfortunately, the amount of votes against you will have +2 added!",
-            "info": "Can kill one person during the standby, but will be revealed. Cannot be day killed and evade night kills 50% of the time. Has a +2 voteshield. Sided with the friendly bugs.",
+            "info": "Can kill one person during the standby, but will be revealed. Cannot be day killed and evades night kills 50% of the time. Has a +2 voteshield. Sided with the Friendly Bugs.",
             "actions": {
 				"voteshield": 2,
 				"kill": { "mode": {"evadeChance": 0.5}},
@@ -142,7 +142,7 @@
             "translation": "Walking Stick",
             "side": "village",
             "help": "You do have a proper name, but we like Walking Stick better! Because you camouflage so well, you can /hide twice a game during the night to avoid all night kills, including poison!",
-            "info": "Can /hide twice a game to avoid all night kills and poison. Sided with the friendly bugs.",
+            "info": "Can /hide twice a game to avoid all night kills and poison. Sided with the Friendly Bugs.",
             "actions": {
                 "night": {
                     "hide": {
@@ -164,7 +164,7 @@
 			"hide": true,
             "side": "village",
             "help": "You do have a proper name, but we like Walking Stick better! Because you camouflage so well, you can /hide twice a game during the night to avoid all night kills, including poison!",
-            "info": "Can /hide twice a game to avoid all night kills and poison. Sided with the friendly bugs.",
+            "info": "Can /hide twice a game to avoid all night kills and poison. Sided with the Friendly Bugs.",
             "actions": {
 			"initialCondition": { "curse": { "cursedRole": "stickC", "curseCount": 1, "silentCurse": true }},
 			"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" }
@@ -175,7 +175,7 @@
 			"hide": true,
             "side": "village",
             "help": "You do have a proper name, but we like Walking Stick better! Because you camouflage so well, you can /hide twice a game during the night to avoid all night kills, including poison!",
-            "info": "Can /hide twice a game to avoid all night kills and poison. Sided with the friendly bugs.",
+            "info": "Can /hide twice a game to avoid all night kills and poison. Sided with the Friendly Bugs.",
             "actions": {
                 "night": {
                     "hide": {
@@ -194,7 +194,7 @@
             "translation": "Roly Poly",
             "side": "village",
             "help": "You do have a proper name, but we like Roly Poly better! With your sturdy shell, you can /protect one bug during the night, including yourself!",
-            "info": "Can /protect one person during the night, even themselves. Sided with the friendly bugs.",
+            "info": "Can /protect one person during the night, even themselves. Sided with the Friendly Bugs.",
             "actions": {
                 "night": {
                     "protect": {
@@ -209,7 +209,7 @@
             "translation": "Blue Roly Poly",
             "side": "village",
             "help": "You are pretty similar to a regular roly poly, except that you're blue! Another thing is that instead of protecting only one bug, you can /protect two people but not yourself!",
-            "info": "Can /protect two people during the night. Sided with the friendly bugs.",
+            "info": "Can /protect two people during the night. Sided with the Friendly Bugs.",
             "actions": {
                 "night": {
                     "protect": {
@@ -225,7 +225,7 @@
             "translation": "Snail",
             "side": "village",
             "help": "Since you are so slow, nobody really sees you as a threat. However, you can /inspect other bugs once a night to find out their role. Also, your sturdy shell allows you to survive the first night or day kill!",
-            "info": "Can /inspect one person during the night. Survives first night/day kill(17+ players only). Sided with the friendly bugs.",
+            "info": "Can /inspect one person during the night. Survives first night/day kill (17+ players only). Sided with the Friendly Bugs.",
             "actions": {
 				"kill":{ "mode": {"evadeCharges":1}},
 				"daykill":{ "mode": {"evadeCharges":1}},
@@ -243,7 +243,7 @@
             "translation": "Snail",
             "side": "village",
             "help": "Since you are so slow, nobody really sees you as a threat. However, you can /inspect other bugs once a night to find out their role.",
-            "info": "Can /inspect one person during the night. Survives first night/day kill. Sided with the friendly bugs.",
+            "info": "Can /inspect one person during the night. Survives first night/day kill. Sided with the Friendly Bugs.",
             "actions": {
                 "night": {
                     "inspect": {
@@ -257,8 +257,8 @@
         {	"role": "worm",
             "translation": "Worm",
             "side": "village",
-            "help": "What are you doing here? You aren't even a bug! Oh, well. You'll still get hax on who is dying during the night. You might even find a killer who isn't on your team!",
-            "info": "Can get hax on who is dying during the night. Sided with the friendly bugs.",
+            "help": "What are you doing here? You aren't even a bug! Oh, well. You'll still get hax on who is dying during the night! But you rarely get to see the attacker's face because, you know, you're a worm.",
+            "info": "Can get hax on who is dying during the night. Sided with the Friendly Bugs.",
             "actions": {
                 "hax": {
                     "poison": { "revealTarget": 0.3 },
@@ -273,19 +273,19 @@
             "translation": "Slug",
             "side": "village",
             "help": "You are a small, cuddly bug, who spends most of its time eating leaves! Unfortunately, the only thing you can do is vote to remove bad guys during the day!",
-            "info": "Sees itself as a caterpillar. Inspects/exposes as a spider. If someone tries to night-kill slug they will be poisoned and if they try to day-kill it they will immediately die. Sided with the friendly bugs.",
+            "info": "Sees itself as a caterpillar. Inspects/exposes as a spider. If someone tries to night-kill slug they will be poisoned and if they try to day-kill it they will immediately die. Sided with the Friendly Bugs.",
             "actions": {
 				"inspect": { "revealAs": [ "spider" ] },
 				"onlist": "spider",
 					"startup": {
                     "revealAs": "villager"
 					},
-				"daykill": "bomb", "daykillrevengemsg": "±Scarab: ~Target~ attacked the poor little Slug, but meanwhile doing so they slipped on Slug's drool and crashed against a tree!",
+				"daykill": "bomb", "daykillrevengemsg": "±Scarab: ~Target~ attacked the poor little Slug, but by doing so they slipped on Slug's drool and crashed against a tree!",
 				"kill": {
                     "mode": "poisonattacker",
 					"count": 2,
 					"poisonDeadMessage": "After attacking the Slug you have found yourself full of their saliva and because of this now you slipped your head against a Tree",
-                    "msg": "±Scarab: You are full of ~User~'s saliva, be careful you could slip your head against something!"
+                    "msg": "±Scarab: You are full of ~User~'s saliva! Be careful, you could slip your head against something!"
                 }
 			}
         },
@@ -293,7 +293,7 @@
             "translation": "Cockroach",
             "side": "village",
             "help": "A filthy bug, you are, but still friendly! You mean no harm but when it comes to helping your team, you are ready to /kill one bug during the night. Also, because you're so hard to kill, you will be protected against the first poison/day kill against you! ",
-            "info": "Can kill one person during the night. Evades the first poison and day kill that targets them. Sided with the friendly bugs.",
+            "info": "Can kill one person during the night. Evades the first poison and day kill that targets them. Sided with the Friendly Bugs.",
             "actions": {
 				"poison":{ "mode": {"evadeCharges":1}},
 				"daykill":{ "mode": {"evadeCharges":1}},
@@ -331,7 +331,7 @@
             "translation": "Water Spider",
             "side": "arachnids",
             "help": "Eek! A spider! Sorry, but you just tend to scare most people! You can discover someone's identity with /scare but they will know that someone has inspected them. You can /kill a bug (shared with team) once a night to help your team win. But be careful, because if you try to kill the Owl, you will be eaten instead! Other than that, vote off the good guys during the day in hopes of winning. Use /tt to talk with your partners",
-            "info": "Can kill one person during the night(shared with team). Can inspect one person during the night (that person will know to have been inspected). Vote counts as -2. Sided with the arachnids.",
+            "info": "Can kill one person during the night(shared with team). Can inspect one person during the night (that person will know to have been inspected). Vote counts as -2. Sided with the Arachnids.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -363,7 +363,7 @@
             "translation": "Black Widow",
             "side": "arachnids",
             "help": "You are one of the most poisonous spiders in the world. Because you are so feared by many bugs, you avoid all night kills and poison. Type /kill during the day to kill a bug, and /poison during the night to kill a bug in two days. Beware, because if you try to kill or poison the Owl, you will be eaten instead! Use /tt to talk with your team.",
-            "info": "Can kill one person during the standby. Can poison one person during the night. Avoids all night kills and poison. Sided with the arachnids.",
+            "info": "Can kill one person during the standby. Can poison one person during the night. Avoids all night kills and poison. Sided with the Arachnids.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -393,7 +393,7 @@
             "translation": "Tarantula",
             "side": "arachnids",
             "help": "You are a species of spider that can grow up to 9 to 10 inches long! You can /kill a bug during the night (shared with team,) but since you are so slow you will always move last. But beware, because if you try killing the Owl, you will be eaten instead! Also, you will survive the first time that you get lynched and your kill will become able to surpass protections and immunities. Use /tt to talk with your team.",
-            "info": "Can kill one person during the night. If lynched he will survive the first time and his kill will become able to surpass protection and bypass night-kill evasion and immunity abilities. Sided with the arachnids.",
+            "info": "Can kill one person during the night. If lynched he will survive and his kill will become able to surpass protection and bypass night-kill evasion and immunity abilities. Sided with the Arachnids.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -410,7 +410,7 @@
                 },
                 "lynch": {
                     "convertTo": "tarantulaB",
-                    "convertmsg": "±Scarab: You swatted the tarantula away, but it has come back to get one more kill!"
+                    "convertmsg": "±Scarab: You swatted the tarantula away, but that only made it angrier!"
                 }
             }
         },
@@ -418,8 +418,8 @@
             "translation": "Lynched Tarantula",
             "side": "arachnids",
 			"hide": true,
-            "help": "We'll give you one more chance to help your team of arachnids! Use /kill to eliminate someone one last time. This kill will bypass all protects and immunities. This kill is also capable of killing birds.",
-            "info": "Can kill one person during the night. If lynched he will survive the first time and his kill will become able to surpass protection and bypass night-kill evasion and immunity abilities. Sided with the arachnids.",
+            "help": "They tried to get rid of you, and now you're MAD. Use /kill to get your revenge on someone. This kill will bypass all protects and immunities. This kill is also capable of killing birds.",
+            "info": "Can kill one person during the night. If lynched he will survive the first time and his kill will become able to surpass protection and bypass night-kill evasion and immunity abilities. Sided with the Arachnids.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -440,7 +440,7 @@
             "translation": "Scorpion",
             "side": "arachnids",
             "help": "Your poison is capable of making humans and bugs sick, and can even kill them! Every night you can /poison one bug during the night (shared with team, will kill the target the next night) and poison another one with /toxic (not shared with team, will kill the target after kills after 2 days/3 nights). But be careful, because if you try to poison the Owl, you will be eaten instead! However, you are immune to all poison. Use /tt to talk with your partners",
-            "info": "Can poison one person during the night (shared with Black Widow, kills after 1 day/2 nights). Can even poison another person with a not shared ability but it takes more time to kill the target (kills after 2 days/3 nights) Immune to all poison. Sided with the arachnids.",
+            "info": "Can poison one person during the night (shared with Black Widow, kills after 1 day/2 nights). Can poison another person with a not shared ability but it takes more time to kill the target (kills after 2 days/3 nights) Immune to all poison. Sided with the Arachnids.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -471,8 +471,8 @@
         {	"role": "tick",
             "translation": "Tick",
             "side": "arachnids",
-            "help": "You have an annoying bite you can use to your advantage by using /bite on a bug once a night. This will prevent them from doing anything that night. Because you are so small, you will be inspected and exposed as a caterpillar! Your vote is 1.1. If you want, you can use /change until the Butterfly is alive, which will give you a -0.9 voteshield and you will be inspected/exposed as a butterfly, but you will lose your ability to distract! Use /tt to talk with your team.",
-            "info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or, can be inspected as Butterfly and have a voteshield of -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the arachnids.",
+            "help": "You have an annoying bite that humans and bugs hate. However, you can use to your advantage by using /bite on a bug once a night. This will prevent them from doing anything that night. Because you are so small, you will be inspected and exposed as a caterpillar! Your vote is 1.1. If you want, you can use /change until the Butterfly is alive, which will give you a -0.9 voteshield and you will be inspected/exposed as a butterfly, but you will lose your ability to distract! Use /tt to talk with your team.",
+            "info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or, can be inspected as Butterfly and have a voteshield of -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the Arachnids.",
             "actions": {
 				"onDeadRoles": { "convertTo": { "tickA": ["butterfly", "mbutterfly"] }, "convertmsg": "The ~Old~ cannot disguise as a Butterfly anymore!"},
 				"inspect": { "revealAs": [ "villager" ] },
@@ -533,7 +533,7 @@
             "side": "arachnids",
             "help": "You have changed into a new form! Now, you have a voteshield of -0.9, and you will be inspected as a Butterfly to help you fake claim. Your vote is still +1.1. Unfortunately you lose your ability to distract, but that's alright! Use /tt to teamtalk",
 			"help2": "Use /cater to return to your old role. If there is no Butterfly alive then you will return into your old role anyway",
-            "info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or , Can be inspected ad Butterfly and have a voteshield equal to -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the arachnids.",
+            "info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or , Can be inspected ad Butterfly and have a voteshield equal to -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the Arachnids.",
             "actions": {
 				"onDeadRoles": { "convertTo": { "tickA": ["butterfly", "mbutterfly"] }, "convertmsg": "The ~Old~ cannot disguise as a Butterfly anymore!"},
 				"inspect": { "revealAs": [ "butterfly" ] },
@@ -581,7 +581,7 @@
             "translation": "Dragonfly",
             "side": "winged",
             "help": "A strange insect you are, you tend to be found around swamps and damp areas. You can /kill a bug twice during the day, but be careful as there is a 100% chance your second kill will reveal you! If you try killing the Owl, you will be eaten instead! Use /tt to talk with your team.",
-            "info": "Can kill two bugs during the standby. 100% chance second kill will reveal. Sided with the winged insects.",
+            "info": "Can kill two bugs during the standby. 100% chance second kill will reveal. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -606,7 +606,7 @@
             "translation": "Fly",
             "side": "winged",
             "help": "Ok, you are truly the most annoying bug in the world. Your small buzzing noise tends to drive other bugs insane. You cannot do anything other than /buzz during the day to drive everyone insane! This won't do anything, but maybe buzzing them you can understand who they are. Your vote counts as -1. Use /tt to talk with your partners.",
-            "info": "Can buzz during the day, but won't do anything apart revealing which role was annoyed by the Fly. Vote counts as -1. Sided with the winged insects.",
+            "info": "Can buzz during the day, but won't do anything apart revealing which role was annoyed by the Fly. Vote counts as -1. Sided with the Winged Insects.",
             "actions": {
 				"onDeadRoles": { "convertTo": { "efly": ["wasp", "mosquito", "moth", "mantis", "dragonfly", "beetle", "bee", "beeA", "beeB", "qbee"] }, "convertmsg": "±Scarab: You killed all the Fly's teammates, but now it has become enraged and can now kill somebody during the night!"},
 				"teamTalk": true,
@@ -626,7 +626,7 @@
         {	"role": "efly",
             "translation": "Enraged Fly",
             "side": "winged",
-            "help": "They killed all your friends and now you are really angry. Make them pay thanks to your new /kill ability. You still have -1 votes and you are still able to /buzz.",
+            "help": "They killed all your friends and now you are really angry. You can make them pay thanks to your new /kill ability. You still have -1 votes and you are still able to /buzz.",
             "info": "Can kill one person during the the night. Converts from fly to enraged fly when all team members dies. Kills any distractors. Has all the abilities of the normal Fly. Sided with Winged Insects.",
             "actions": {
 				"teamTalk": true,
@@ -658,8 +658,8 @@
         {	"role": "moth",
             "translation": "Moth",
             "side": "winged",
-            "help": "People often confuse you with a butterfly, which is good, because this means that the inspector will see you as a butterfly! Because you are a bit of the opposite of a butterfly, your vote counts as -2 instead! Use /tt to talk with your team.",
-            "info": "Reveals as butterfly when inspected/exposed. Vote counts as -2. Sided with the winged insects.",
+            "help": "People often confuse you with a butterfly, which is good, because this means that inspectors will see you as a butterfly! Because you are a bit of the opposite of a butterfly, your vote counts as -2 instead! Use /tt to talk with your team.",
+            "info": "Reveals as butterfly when inspected/exposed. Vote counts as -2. Sided with the Winged Insects.",
             "actions": {
 				"onDeadRoles": { "convertTo": { "emoth": ["wasp", "mosquito", "fly", "mantis", "dragonfly", "beetle", "bee", "beeA", "beeB", "qbee"] }, "convertmsg": "±Scarab: You killed all the Moth's teammates, but now it has become enraged and now has a vote that will automatically lynch whoever the moth votes for!"},
 				"inspect": { "revealAs": [ "butterfly" ] },
@@ -673,7 +673,7 @@
             "translation": "Enraged Moth",
             "side": "winged",
             "help": "They killed all your friends and now you are really angry. Make them pay thanks to your new +9999 vote power.",
-            "info": "Converts from moth to enraged moth when all team members die. Vote counts as +9999. Sided with the winged insects.",
+            "info": "Converts from moth to enraged moth when all team members die. Vote counts as +9999. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -684,7 +684,7 @@
             "translation": "Mosquito",
             "side": "winged",
             "help": "Another annoying bug, you tend to annoy humans and bugs by biting them and sucking their blood. Not many know this, but you are capable of transmitting diseases when you bite different people, meaning that you can /drain one bug every two days to poison them. Use /tt to talk with your partners.",
-            "info": "Can drain one person during the night to poison them every two days. Sided with the winged insects.",
+            "info": "Can drain one person during the night to poison them every two days. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -706,7 +706,7 @@
             "translation": "Praying Mantis",
             "side": "winged",
             "help": "You are a quiet and silent bug, yet a feared killer by all bugs. You avoid all night kills, and have a voteshield of -3. You can /kill a bug once a night (shared with team) and can not be haxed. Use /tt to talk with your team.",
-            "info": "Can kill one person during the night. Has a voteshield of -3. Cannot be haxed. Avoids all night kills. Sided with the winged insects.",
+            "info": "Can kill one person during the night. Has a voteshield of -3. Cannot be haxed. Avoids all night kills. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -730,7 +730,7 @@
             "translation": "Beetle",
             "side": "winged",
             "help": "You have a hard, sturdy back which protects your wings from getting hurt. Therefore, you can /protect yourself every night to keep yourself alive! In addition, you are able to /kill one bug, but you can only do this once per game, so choose wisely! Use /tt to talk with your team.",
-            "info": "Can protect itself during the night. Can kill one person per game. Sided with the winged insects.",
+            "info": "Can protect itself during the night. Can kill one person per game. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -759,7 +759,7 @@
             "side": "winged",
 			"hide": true,
             "help": "Even though you're small, you tend to frighten humans and bugs. You can /sting a bug together with your Queen every night, which will kill them instantly. However, you will die two days after your /sting if your Queen is gone. You can also /protect the queen bee or other winged insects once a night. Use /tt to talk with your team.",
-            "info": "Can sting one person during the night to kill them, but will die 2 days later if Queen Bee is not around to support him. Can protect someone during the night. Sided with the winged insects.",
+            "info": "Can sting one person during the night to kill them, but will die 2 days later if Queen Bee is not around to support him. Can protect someone during the night. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -787,7 +787,7 @@
             "translation": "Bee",
             "side": "winged",
             "help": "Even though you're small, you tend to frighten humans and bugs. You can murder another bug with /kill (shared with team) and with /sting once a game (not shared with team), which will kill them instantly. However, you will die two days later after using /sting. You can also /protect the queen bee or other winged insects once a night. Use /tt to talk with your team.",
-            "info": "Can kill together with Team. Can sting a second person once per game to kill them, but will die 2 days later. Can protect during the night. Sided with the winged insects.",
+            "info": "Can kill together with Team. Can sting a second person once per game to kill them, but will die 2 days later. Can protect during the night. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -827,7 +827,7 @@
 			"hide":true,
             "side": "winged",
             "help": "Even though you're small, you tend to frighten humans and bugs. You can murder another bug with /kill (shared with team) and with /sting once a game (not shared with team), which will kill them instantly. However, you will die two days later after using /sting. You can also /protect the queen bee or other winged insects once a night. Use /tt to talk with your team.",
-            "info": "Can kill together with Team. Can sting a second person once per game to kill them, but will die 2 days later. Can protect during the night. Sided with the winged insects.",
+            "info": "Can kill together with Team. Can sting a second person once per game to kill them, but will die 2 days later. Can protect one person during the night. Sided with the Winged Insects.",
             "actions": {
                 "initialCondition": { "poison": { "count": 2, "poisonDeadMessage": "A bee cannot survive without his stinger!"}},
 				"teamTalk": true,
@@ -866,7 +866,7 @@
             "translation": "Queen Bee",
             "side": "winged",
             "help": "You are the queen of the hive, which means you can tell the bees who to kill. You can kill a bug with /kill (shared with team,) and another one once per game with /sting (not shared) but unlike a normal Bee you will not die two days later. You cannot be haxed. Your vote counts as +3. Use /tt to talk with your team.",
-            "info": "Can /sting one person once during the game (not shared) to kill them and /kill another person(shared with the other team mates) during the same night. Cannot be haxed. Vote counts as +3. Sided with the winged insects. ",
+            "info": "Can /sting one person once during the game (not shared) to kill them and /kill another person (shared with the other team mates) during the same night. Cannot be haxed. Vote counts as +3. Sided with the Winged Insects. ",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -898,7 +898,7 @@
             "translation": "Night Hawk",
             "side": "birds",
             "help": "You are, by far, the number one fear for all bugs, good and bad. First off, you cannot be night killed, poisoned, or day killed by any bugs, but you can still be inspected. Use /swoop once during the day, which will automatically kill any bug. Use /tt to talk with your team.",
-            "info": "Can kill one person during the standby. Avoids all kills and poison from bugs. Sided with the birds.",
+            "info": "Can kill one person during the standby. Avoids all kills and poison from bugs. Sided with the Birds.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -941,7 +941,7 @@
 			"hide": true,
             "side": "birds",
             "help": "You are, by far, the number one fear for all bugs, good and bad. First off, you cannot be night killed, poisoned, or day killed by any bugs, but you can still be inspected. Use /swoop once during the day, which will automatically kill any bug. Also, if a bug tries to kill you during the day or tries exposing you, you will eat them instead! Use /tt to talk with your team.",
-            "info": "Can kill one person during the standby. Avoids all kills and poison from bugs and kills anyone that uses this actions on Hawk. Sided with the birds.",
+            "info": "Can kill one person during the standby. Avoids all kills and poison from bugs and kills anyone that uses this actions on Hawk. Sided with the Birds.",
             "actions": {
 				"initialCondition": { "curse": { "cursedRole": "hawkA", "curseCount": 1, "silentCurse": true }},
 				"teamTalk": true,
@@ -961,7 +961,7 @@
             "translation": "Owl",
             "side": "birds",
             "help": "A quiet bird you are, but still very threatening. Like any other bird, you are immune to all night kills, poison, distracts, and day kills, but can still be inspected. But, instead of during the day, you can /swoop during the night. Your vote counts as -5. Also, if a bug tires to kill you during the day or tries exposing you, you will eat them instead! Use /tt to talk with your team.",
-            "info": "Can kill one person during the night. Avoids all kills, distracts, and poison from bugs. Bypasses distracts and protects. Vote counts as -5. Sided with the birds.",
+            "info": "Can kill one person during the night. Avoids all kills, distracts, and poison from bugs. Bypasses distracts and protects. Vote counts as -5. Sided with the Birds.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -986,7 +986,7 @@
 			"hide": true,
             "side": "birds",
             "help": "A quiet bird you are, but still very threatening. Like any other bird, you are immune to all night kills, poison, distracts, and day kills, but can still be inspected. But, instead of during the day, you can /swoop during the night. Your vote counts as -5. Also, if a bug tires to kill you during the day or tries exposing you, you will eat them instead! Use /tt to talk with your team.",
-            "info": "Can kill one person during the night. Avoids all kills, distracts, and poison from bugs. Bypasses distracts and protects. Vote counts as -5. Sided with the birds.",
+            "info": "Can kill one person during the night. Avoids all kills, distracts, and poison from bugs. Bypasses distracts and protects. Vote counts as -5. Sided with the Birds.",
             "actions": {
 				"initialCondition": { "curse": { "cursedRole": "owlA", "curseCount": 1, "silentCurse": true }},
 				"teamTalk": true,
@@ -1008,7 +1008,7 @@
             "translation": "Cuckoo",
             "side": "birds",
             "help": "You are a smaller and frailer bird than the nighthawk and owl, but still very deadly. You can /swoop once a night to kill a bug (shared with team) which will bypass all distracts and protects. Your vote counts as +2. You also revenge any actions by any bug, but you can still be inspected. Use /tt to talk with your team.",
-            "info": "Can kill one person during the night bypassing protect and distract. Avoids all kills, distracts and poison from bugs. Vote counts as +2. Sided with the birds.",
+            "info": "Can kill one person during the night bypassing protect and distract. Avoids all kills, distracts and poison from bugs. Vote counts as +2. Sided with the Birds.",
             "actions": {
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
@@ -1056,7 +1056,7 @@
 			"hide": true,
             "side": "birds",
             "help": "You are a smaller and frailer bird than the nighthawk and owl, but still very deadly. You can /swoop once a night to kill a bug (shared with team) which will bypass all distracts and protects. Your vote counts as +2. You also revenge any actions by any bug, but you can still be inspected. Use /tt to talk with your team.",
-            "info": "Can kill one person during the night. Avoids and revenge kill all kills, distracts, expose and poison from bugs. Vote counts as +2. Sided with the birds.",
+            "info": "Can kill one person during the night. Avoids and revenge kill all kills, distracts, expose and poison from bugs. Vote counts as +2. Sided with the Birds.",
             "actions": {
 				"initialCondition": { "curse": { "cursedRole": "cuckooA", "curseCount": 1, "silentCurse": true }},
 				"teamTalk": true,
