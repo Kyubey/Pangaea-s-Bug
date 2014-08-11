@@ -115,6 +115,7 @@
             "help": "The ants go marching one by one, HORAH! HORAH! You are strong alone, but are even stronger when with a colony! You know the other ants. Use /tt to talk with the other Ants.",
             "info": "Knows the other ants. Sided with the Friendly Bugs.",
             "actions": {
+				"preventTeamvote": [ "ant" ],
 				"teamTalk": [ "ant"],
                 "startup": { "revealRole": "ant" }
             }
@@ -312,6 +313,7 @@
             "help": "Eek! A spider! Sorry, but you just tend to scare most people! You can /kill a bug (shared with team) once a night to help your team win. But be careful, because if you try to kill the Owl, you will be eaten instead! Other than that, vote off the good guys during the day in hopes of winning. Use /tt to talk with your partners",
             "info": "Can kill one person during the night. Sided with the arachnids.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
                 "night": {
@@ -333,6 +335,7 @@
             "help": "Eek! A spider! Sorry, but you just tend to scare most people! You can discover someone's identity with /scare but they will know that someone has inspected them. You can /kill a bug (shared with team) once a night to help your team win. But be careful, because if you try to kill the Owl, you will be eaten instead! Other than that, vote off the good guys during the day in hopes of winning. Use /tt to talk with your partners",
             "info": "Can kill one person during the night(shared with team). Can inspect one person during the night (that person will know to have been inspected). Vote counts as -2. Sided with the Arachnids.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
 				"vote": -2,
@@ -365,6 +368,7 @@
             "help": "You are one of the most poisonous spiders in the world. Because you are so feared by many bugs, you avoid all night kills and poison. Type /kill during the day to kill a bug, and /poison during the night to kill a bug in two days. Beware, because if you try to kill or poison the Owl, you will be eaten instead! Use /tt to talk with your team.",
             "info": "Can kill one person during the standby. Can poison one person during the night. Avoids all night kills and poison. Sided with the Arachnids.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" },
@@ -395,6 +399,7 @@
             "help": "You are a species of spider that can grow up to 9 to 10 inches long! You can /kill a bug during the night (shared with team,) but since you are so slow you will always move last. But beware, because if you try killing the Owl, you will be eaten instead! Also, you will survive the first time that you get lynched and your kill will become able to surpass protections and immunities. Use /tt to talk with your team.",
             "info": "Can kill one person during the night. If lynched he will survive and his kill will become able to surpass protection and bypass night-kill evasion and immunity abilities. Sided with the Arachnids.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
                 "night": {
@@ -421,6 +426,7 @@
             "help": "They tried to get rid of you, and now you're MAD. Use /kill to get your revenge on someone. This kill will bypass all protects and immunities. This kill is also capable of killing birds.",
             "info": "Can kill one person during the night. If lynched he will survive the first time and his kill will become able to surpass protection and bypass night-kill evasion and immunity abilities. Sided with the Arachnids.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
                 "night": {
@@ -442,6 +448,7 @@
             "help": "Your poison is capable of making humans and bugs sick, and can even kill them! Every night you can /poison one bug during the night (shared with team, will kill the target the next night) and poison another one with /toxic (not shared with team, will kill the target after kills after 2 days/3 nights). But be careful, because if you try to poison the Owl, you will be eaten instead! However, you are immune to all poison. Use /tt to talk with your partners",
             "info": "Can poison one person during the night (shared with Black Widow, kills after 1 day/2 nights). Can poison another person with a not shared ability but it takes more time to kill the target (kills after 2 days/3 nights) Immune to all poison. Sided with the Arachnids.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
 				"poison": { "mode": "ignore" },
@@ -476,6 +483,7 @@
             "actions": {
 				"onDeadRoles": { "convertTo": { "tickA": ["butterfly", "mbutterfly"] }, "convertmsg": "The ~Old~ cannot disguise as a Butterfly anymore!"},
 				"inspect": { "revealAs": [ "villager" ] },
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
 				"vote": 1.1,
@@ -511,6 +519,7 @@
 			"info": "Can change their abilities. Can be inspected as Caterpillar and be able to /distract, or, can be inspected as Butterfly and have a voteshield of -0.9 (the butterfly form can be used only if there is at least one butterfly alive). Vote counts as 1.1. Sided with the arachnids.",
             "actions": {
 				"inspect": { "revealAs": [ "villager" ] },
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
 				"vote": 1.1,
@@ -537,6 +546,7 @@
             "actions": {
 				"onDeadRoles": { "convertTo": { "tickA": ["butterfly", "mbutterfly"] }, "convertmsg": "The ~Old~ cannot disguise as a Butterfly anymore!"},
 				"inspect": { "revealAs": [ "butterfly" ] },
+				"preventTeamvote": true,
 				"teamTalk": true,
 				"voteshield": -0.9,
                 "startup": "team-reveal-with-roles",
@@ -563,6 +573,7 @@
             "info": "Can kill one person during the night. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
                 "night": {
                     "kill": {
@@ -584,6 +595,7 @@
             "info": "Can kill two bugs during the standby. 100% chance second kill will reveal. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
                 "standby": {
                     "kill": {
@@ -610,6 +622,7 @@
             "actions": {
 				"onDeadRoles": { "convertTo": { "efly": ["wasp", "mosquito", "moth", "mantis", "dragonfly", "beetle", "bee", "beeA", "beeB", "qbee"] }, "convertmsg": "±Scarab: You killed all the Fly's teammates, but now it has become enraged and can now kill somebody during the night!"},
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "standby": {
                     "buzz": {
                         "target": "AnyButTeam",
@@ -630,6 +643,7 @@
             "info": "Can kill one person during the the night. Converts from fly to enraged fly when all team members dies. Kills any distractors. Has all the abilities of the normal Fly. Sided with Winged Insects.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"distract": {"mode": "killattacker" },
                 "night": {
@@ -664,6 +678,7 @@
 				"onDeadRoles": { "convertTo": { "emoth": ["wasp", "mosquito", "fly", "mantis", "dragonfly", "beetle", "bee", "beeA", "beeB", "qbee"] }, "convertmsg": "±Scarab: You killed all the Moth's teammates, but now it has become enraged and now has a vote that will automatically lynch whoever the moth votes for!"},
 				"inspect": { "revealAs": [ "butterfly" ] },
 				"onlist": "butterfly",
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
 				"vote": -2
@@ -675,6 +690,7 @@
             "help": "They killed all your friends and now you are really angry. Make them pay thanks to your new +9999 vote power.",
             "info": "Converts from moth to enraged moth when all team members die. Vote counts as +9999. Sided with the Winged Insects.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "startup": "team-reveal-with-roles",
 				"vote": 9999
@@ -687,6 +703,7 @@
             "info": "Can drain one person during the night to poison them every two days. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
                 "night": {
                     "drain": {
@@ -709,6 +726,7 @@
             "info": "Can kill one person during the night. Has a voteshield of -3. Cannot be haxed. Avoids all night kills. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"kill": { "mode": "ignore" },
 				"avoidHax": [ "kill" ],
@@ -733,6 +751,7 @@
             "info": "Can protect itself during the night. Can kill one person per game. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
                 "night": {
                     "kill": {
@@ -762,6 +781,7 @@
             "info": "Can sting one person during the night to kill them, but will die 2 days later if Queen Bee is not around to support him. Can protect someone during the night. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"onDeadRoles": { "convertTo": { "beeA": ["qbee"] }},
                 "night": {
@@ -790,6 +810,7 @@
             "info": "Can kill together with Team. Can sting a second person once per game to kill them, but will die 2 days later. Can protect during the night. Sided with the Winged Insects.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
                 "night": {
                     "kill": {
@@ -831,6 +852,7 @@
             "actions": {
                 "initialCondition": { "poison": { "count": 2, "poisonDeadMessage": "A bee cannot survive without his stinger!"}},
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
                 "night": {
                     "kill": {
@@ -869,6 +891,7 @@
             "info": "Can /sting one person once during the game (not shared) to kill them and /kill another person (shared with the other team mates) during the same night. Cannot be haxed. Vote counts as +3. Sided with the Winged Insects. ",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"vote": 3,
                 "night": {
@@ -901,6 +924,7 @@
             "info": "Can kill one person during the standby. Avoids all kills and poison from bugs. Sided with the Birds.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" },
 				"daykill": "evade",
@@ -922,6 +946,7 @@
             "info": "Can kill one person during the standby. Avoids all kills and poison from bugs and kills anyone that uses this actions on Hawk. Sided with the birds.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" },
 				"dummy": {"mode": "killattacker" }, "daykill": "revenge",
@@ -945,6 +970,7 @@
             "actions": {
 				"initialCondition": { "curse": { "cursedRole": "hawkA", "curseCount": 1, "silentCurse": true }},
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" },
                 "standby": {
@@ -964,6 +990,7 @@
             "info": "Can kill one person during the night. Avoids all kills, distracts, and poison from bugs. Bypasses distracts and protects. Vote counts as -5. Sided with the Birds.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"vote": -5,
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" }, "distract": { "mode": "ignore" },
@@ -990,6 +1017,7 @@
             "actions": {
 				"initialCondition": { "curse": { "cursedRole": "owlA", "curseCount": 1, "silentCurse": true }},
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"vote": -5,
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" }, "distract": { "mode": "ignore" },
@@ -1011,6 +1039,7 @@
             "info": "Can kill one person during the night bypassing protect and distract. Avoids all kills, distracts and poison from bugs. Vote counts as +2. Sided with the Birds.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"vote": 2,
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" }, "distract": { "mode": "ignore", "silent":true },
@@ -1034,6 +1063,7 @@
             "info": "Can kill one person during the night. Avoids and revenge kill all kills, distracts, expose and poison from bugs. Vote counts as +2. Sided with the birds.",
             "actions": {
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"vote": 2,
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" }, "distract": { "mode": "ignore" },
@@ -1060,6 +1090,7 @@
             "actions": {
 				"initialCondition": { "curse": { "cursedRole": "cuckooA", "curseCount": 1, "silentCurse": true }},
 				"teamTalk": true,
+				"preventTeamvote": true,
                 "startup": "team-reveal-with-roles",
 				"vote": 2,
 				"kill": { "mode": "ignore" }, "poison": { "mode": "ignore" }, "distract": { "mode": "ignore" },
